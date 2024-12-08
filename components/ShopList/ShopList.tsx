@@ -1,8 +1,8 @@
 import React from 'react'
 import Hero from '../Hero'
 import Sort from '../Sort'
-import { IoGrid } from 'react-icons/io5'
-import { FaList } from 'react-icons/fa'
+// import { IoGrid } from 'react-icons/io5'
+// import { FaList } from 'react-icons/fa'
 import Partner from '../Partner'
 import Contant from './Contant'
 import image1 from '../../images/contant1.png'
@@ -17,7 +17,7 @@ const ShopList = () => {
   return (
     <div>
         <Hero heading='Shop List' tittle='Home . Pages .' text='Shop List' />
-        <Sort heading='Ecommerce Acceories & Fashion item ' about='About 9,620 results (0.62 seconds)' tittle='Per Page:' tittle1='Sort By:' tittle2='View:' icons={[<IoGrid />,<FaList/>]} />
+        <Sort heading='Ecommerce Acceories & Fashion item ' about='About 9,620 results (0.62 seconds)' tittle='Per Page:' tittle1='Sort By:' tittle2='View:'  />
         <div className='flex flex-col gap-8'>
 
         <Contant tittle='Accumsan tincidunt' price='$26.00' price1='$52.00' image={image1} />
