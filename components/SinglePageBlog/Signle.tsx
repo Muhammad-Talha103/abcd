@@ -96,6 +96,7 @@ const Signle = () => {
                     style={{ fontStyle: "italic" }}
                     className={`${josefinFont.className} border-l-[2px] border-l-[#FB2E86] text-[#8A8FB9] py-6 px-6 italic text-[18px] font-bold tracking-[2px] leading-[32px]`}
                   >
+                    
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem quisquam ut cum veniam ex, a laudantium
                     voluptatibus, maxime, id illum corporis
@@ -104,7 +105,7 @@ const Signle = () => {
                     <Image src={image2} alt=""/>
                     <Image src={image3} alt=""/>
                 </div>
-                
+
               </div>
             </div>
           </div>
