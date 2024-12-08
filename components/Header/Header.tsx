@@ -2,7 +2,7 @@ import React from "react";
 import HeaderTop from "./HeaderTop";
 import Container from "@/shared/Container";
 import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
+
 import { Josefin_Sans, Lato } from "next/font/google";
 
 const josefinFont = Josefin_Sans({
@@ -69,9 +69,9 @@ const Header = () => {
                 type="text"
                 className="w-[266px] h-full outline-none bg-transparent px-2"
               />
-              <button className="w-[51px] flex items-center justify-center h-full border-l hover:text-white border-[#E7E6EF] hover:bg-[#Fb2E86]">
+              {/* <button className="w-[51px] flex items-center justify-center h-full border-l hover:text-white border-[#E7E6EF] hover:bg-[#Fb2E86]">
                 <CiSearch size={24} />
-              </button>
+              </button> */}
             </div>
           </div>
         </Container>
