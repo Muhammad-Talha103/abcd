@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 
 
 export interface heroProps{
@@ -15,6 +16,14 @@ export interface SortProps {
     tittle?: string;
     tittle1?: string;
     tittle2?: string;
-    icons?: React.ReactNode;
+    icons?: React.ReactNode[];
+  }
+
+  export interface GridItemsProps{
+    tittle: string;
+    text?: string;
+    image?: StaticImageData;
+    price?: string;
+    price1?: string;
   }
   
