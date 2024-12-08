@@ -1,9 +1,9 @@
 import React from "react";
 import HeaderTop from "./HeaderTop";
 import Container from "@/shared/Container";
+import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import { Josefin_Sans, Lato } from "next/font/google";
-import Link from "next/link";
 
 const josefinFont = Josefin_Sans({
   subsets: ["latin"],

@@ -3,6 +3,10 @@ import React from "react";
 import image1 from "../../images/blog1.png";
 import image2 from "../../images/single1.png";
 import image3 from "../../images/single2.png";
+import image4 from "../../images/single3.png";
+import image5 from "../../images/single4.png";
+import image6 from "../../images/single5.png";
+import image7 from "../../images/single6.png";
 import Sidebar from "../../components/Blogs/BlogSidebar";
 import { Josefin_Sans, Lato } from "next/font/google";
 import Image from "next/image";
@@ -19,7 +23,7 @@ const Signle = () => {
   return (
     <div>
       <Container className="py-16">
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid mdl:grid-cols-4 grid-cols-1 gap-5">
           <div className="col-span-3">
             <div className="flex flex-col gap-11">
               <div className=" h-[453px]">
@@ -92,24 +96,319 @@ const Signle = () => {
                   Voluptas, deserunt minus.{" "}
                 </p>
 
-                  <p
-                    style={{ fontStyle: "italic" }}
-                    className={`${josefinFont.className} border-l-[2px] border-l-[#FB2E86] text-[#8A8FB9] py-6 px-6 italic text-[18px] font-bold tracking-[2px] leading-[32px]`}
-                  >
-                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Exercitationem quisquam ut cum veniam ex, a laudantium
-                    voluptatibus, maxime, id illum corporis
-                  </p>
+                <p
+                  style={{ fontStyle: "italic" }}
+                  className={`${josefinFont.className} border-l-[2px] border-l-[#FB2E86] text-[#8A8FB9] py-6 px-6 italic text-[18px] font-bold tracking-[2px] leading-[32px]`}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem quisquam ut cum veniam ex, a laudantium
+                  voluptatibus, maxime, id illum corporis
+                </p>
                 <div className="grid grid-cols-2 gap-6">
-                    <Image src={image2} alt=""/>
-                    <Image src={image3} alt=""/>
+                  <Image src={image2} alt="" />
+                  <Image src={image3} alt="" />
+                </div>
+                <p
+                  className={`${lato.className} text-[#8A8FB9] py-8 font-normal  text-[16px] leading-[25px] `}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem quisquam ut cum veniam ex, a laudantium
+                  voluptatibus, maxime, id illum corporis nobis mollitia
+                  maiores! Quod eum rem aspernatur veritati Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Incidunt similique
+                  laudantium quis neque optio possimus, at fugit quos deleniti
+                  voluptatum vitae illum itaque omnis cumque tempore iure.
+                  Voluptas, deserunt minus.{" "}
+                </p>
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  mdl:grid-cols-4 gap-4">
+                  <div className="flex flex-col  gap-4 justify-center">
+                    <Image src={image4} alt="" className="h-[254px]" />
+                    <h3
+                      className={`${josefinFont.className} pl-4  gap-5 font-bold text-[18px] leading-[21.6px] `}
+                    >
+                      Quam sed
+                    </h3>
+                    <p
+                      className={`${josefinFont.className} flex justify-between text-[15px] leading-[16.4px]  text-[#151875] font-normal`}
+                    >
+                      $32.00
+                      <span
+                        className={`${josefinFont.className} line-through text-[15px] leading-[16.4px]  text-[#F701A8] font-normal`}
+                      >
+                        {" "}
+                        $56.00
+                      </span>{" "}
+                      <span className="flex gap-2">
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            width="11"
+                            height="11"
+                            viewBox="0 0 16 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
+                              fill="yellow"
+                            />
+                          </svg>
+                        ))}
+                      </span>
+                    </p>
+                  </div>
+                  <div className="flex flex-col  gap-4 justify-center">
+                    <Image src={image5} alt="" className="h-[254px]" />
+                    <h3
+                      className={`${josefinFont.className} pl-4  gap-5 font-bold text-[18px] leading-[21.6px] `}
+                    >
+                      Tristique sed
+                    </h3>
+                    <p
+                      className={`${josefinFont.className} flex  justify-between text-[15px] leading-[16.4px]  text-[#151875] font-normal`}
+                    >
+                      $32.00
+                      <span
+                        className={`${josefinFont.className} line-through text-[15px] leading-[16.4px]  text-[#F701A8] font-normal`}
+                      >
+                        {" "}
+                        $56.00
+                      </span>{" "}
+                      <span className="flex gap-2">
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            width="11"
+                            height="11"
+                            viewBox="0 0 16 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
+                              fill="yellow"
+                            />
+                          </svg>
+                        ))}
+                      </span>
+                    </p>
+                  </div>
+                  <div className="flex flex-col  gap-4 justify-center">
+                    <Image src={image6} alt="" className="h-[254px]" />
+                    <h3
+                      className={`${josefinFont.className} pl-4  gap-5 font-bold text-[18px] leading-[21.6px] `}
+                    >
+                      A etiam
+                    </h3>
+                    <p
+                      className={`${josefinFont.className} flex  justify-between text-[15px] leading-[16.4px]  text-[#151875] font-normal`}
+                    >
+                      $32.00
+                      <span
+                        className={`${josefinFont.className} line-through text-[15px] leading-[16.4px]  text-[#F701A8] font-normal`}
+                      >
+                        {" "}
+                        $56.00
+                      </span>{" "}
+                      <span className="flex gap-2">
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            width="11"
+                            height="11"
+                            viewBox="0 0 16 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
+                              fill="yellow"
+                            />
+                          </svg>
+                        ))}
+                      </span>
+                    </p>
+                  </div>
+                  <div className="flex flex-col  gap-4 justify-center">
+                    <Image src={image7} alt="" className="h-[254px]" />
+                    <h3
+                      className={`${josefinFont.className} pl-4  gap-5 font-bold text-[18px] leading-[21.6px] `}
+                    >
+                      Mi nisi
+                    </h3>
+                    <p
+                      className={`${josefinFont.className} flex justify-between text-[15px] leading-[16.4px]  text-[#151875] font-normal`}
+                    >
+                      $32.00
+                      <span
+                        className={`${josefinFont.className} line-through text-[15px] leading-[16.4px]  text-[#F701A8] font-normal`}
+                      >
+                        {" "}
+                        $56.00
+                      </span>{" "}
+                      <span className="flex gap-2">
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            width="11"
+                            height="11"
+                            viewBox="0 0 16 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
+                              fill="yellow"
+                            />
+                          </svg>
+                        ))}
+                      </span>
+                    </p>
+                  </div>
                 </div>
 
+                <p
+                  className={`${lato.className} text-[#8A8FB9] py-8 font-normal  text-[16px] leading-[25px] `}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem quisquam ut cum veniam ex, a laudantium
+                  voluptatibus, maxime, id illum corporis nobis mollitia
+                  maiores! Quod eum rem aspernatur veritati Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Incidunt similique
+                  laudantium quis neque optio possimus, at fugit quos deleniti
+                  voluptatum vitae illum itaque omnis cumque tempore iure.
+                  Voluptas, deserunt minus.{" "}
+                </p>
+
+                <p
+                  className={`${lato.className} text-[#8A8FB9] py-8 font-normal  text-[16px] leading-[25px] `}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem quisquam ut cum veniam ex, a laudantium
+                  voluptatibus, maxime, id illum corporis nobis mollitia
+                  maiores! Quod eum rem aspernatur veritati Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Incidunt similique
+                  laudantium quis neque optio possimus, at fugit quos deleniti
+                  voluptatum vitae illum itaque omnis cumque tempore iure.
+                  Voluptas, deserunt minus.{" "}
+                </p>
+
+                <div>
+                  <div className="flex gap-4 items-center justify-center p-3">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#5625DF" />
+                      <path
+                        d="M13.932 17.9981V12.5341H15.7753L16.0493 10.3948H13.932V9.03211C13.932 8.41478 14.104 7.99211 14.99 7.99211H16.1127V6.08478C15.5664 6.02624 15.0174 5.99797 14.468 6.00011C12.8387 6.00011 11.72 6.99478 11.72 8.82078V10.3908H9.88867V12.5301H11.724V17.9981H13.932Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#FF27B7" />
+                      <path
+                        d="M17.9647 9.53684C17.958 9.03192 17.8635 8.53202 17.6854 8.0595C17.5309 7.66094 17.2951 7.29897 16.9928 6.99672C16.6906 6.69448 16.3286 6.4586 15.93 6.30417C15.4636 6.12907 14.9708 6.0344 14.4727 6.02417C13.8314 5.9955 13.628 5.9875 12 5.9875C10.372 5.9875 10.1634 5.9875 9.52671 6.02417C9.02882 6.03447 8.53628 6.12915 8.07005 6.30417C7.67142 6.4585 7.30939 6.69433 7.00714 6.99659C6.70488 7.29885 6.46904 7.66088 6.31471 8.0595C6.13927 8.52559 6.0448 9.01824 6.03538 9.51617C6.00671 10.1582 5.99805 10.3615 5.99805 11.9895C5.99805 13.6175 5.99805 13.8255 6.03538 14.4628C6.04538 14.9615 6.13938 15.4535 6.31471 15.9208C6.4693 16.3193 6.70531 16.6812 7.00767 16.9834C7.31003 17.2855 7.67209 17.5212 8.07071 17.6755C8.53567 17.8576 9.0283 17.9591 9.52738 17.9755C10.1694 18.0042 10.3727 18.0128 12.0007 18.0128C13.6287 18.0128 13.8374 18.0128 14.474 17.9755C14.9721 17.9657 15.465 17.8712 15.9314 17.6962C16.3298 17.5416 16.6917 17.3056 16.9939 17.0034C17.2962 16.7012 17.5321 16.3393 17.6867 15.9408C17.862 15.4742 17.956 14.9822 17.966 14.4828C17.9947 13.8415 18.0034 13.6382 18.0034 12.0095C18.002 10.3815 18.002 10.1748 17.9647 9.53684ZM11.996 15.0682C10.2934 15.0682 8.91405 13.6888 8.91405 11.9862C8.91405 10.2835 10.2934 8.90417 11.996 8.90417C12.8134 8.90417 13.5974 9.22888 14.1754 9.80687C14.7533 10.3849 15.078 11.1688 15.078 11.9862C15.078 12.8036 14.7533 13.5875 14.1754 14.1655C13.5974 14.7435 12.8134 15.0682 11.996 15.0682ZM15.2007 9.50884C14.8027 9.50884 14.482 9.1875 14.482 8.79017C14.482 8.69584 14.5006 8.60243 14.5367 8.51528C14.5728 8.42812 14.6257 8.34893 14.6924 8.28223C14.7591 8.21553 14.8383 8.16262 14.9255 8.12652C15.0126 8.09042 15.106 8.07184 15.2004 8.07184C15.2947 8.07184 15.3881 8.09042 15.4753 8.12652C15.5624 8.16262 15.6416 8.21553 15.7083 8.28223C15.775 8.34893 15.8279 8.42812 15.864 8.51528C15.9001 8.60243 15.9187 8.69584 15.9187 8.79017C15.9187 9.1875 15.5974 9.50884 15.2007 9.50884Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M11.9961 13.9878C13.1018 13.9878 13.9981 13.0915 13.9981 11.9858C13.9981 10.8801 13.1018 9.98381 11.9961 9.98381C10.8905 9.98381 9.99414 10.8801 9.99414 11.9858C9.99414 13.0915 10.8905 13.9878 11.9961 13.9878Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12.5" cy="12.5" r="12.5" fill="#37DAF3" />
+                      <path
+                        d="M19.7623 7.29115C19.2057 7.53781 18.6077 7.70448 17.979 7.77981C18.6277 7.39167 19.113 6.78079 19.3443 6.06115C18.7349 6.42314 18.0679 6.67794 17.3723 6.81448C16.9046 6.31506 16.285 5.98403 15.6099 5.87279C14.9347 5.76156 14.2417 5.87634 13.6385 6.19931C13.0353 6.52229 12.5555 7.03539 12.2738 7.65895C11.992 8.28251 11.924 8.98165 12.0803 9.64781C10.8455 9.58581 9.63742 9.26484 8.53462 8.70575C7.43181 8.14665 6.45889 7.36192 5.679 6.40248C5.41233 6.86248 5.259 7.39581 5.259 7.96381C5.2587 8.47514 5.38462 8.97864 5.62559 9.42963C5.86655 9.88063 6.21511 10.2652 6.64033 10.5491C6.14718 10.5335 5.66492 10.4002 5.23367 10.1605V10.2005C5.23362 10.9176 5.48169 11.6127 5.93579 12.1678C6.38989 12.7229 7.02205 13.1038 7.725 13.2458C7.26752 13.3696 6.78789 13.3879 6.32233 13.2991C6.52066 13.9162 6.907 14.4558 7.42724 14.8424C7.94749 15.229 8.57561 15.4433 9.22367 15.4551C8.12356 16.3188 6.76493 16.7872 5.36633 16.7851C5.11859 16.7852 4.87105 16.7707 4.625 16.7418C6.04465 17.6546 7.69723 18.139 9.385 18.1371C15.0983 18.1371 18.2217 13.4051 18.2217 9.30115C18.2217 9.16781 18.2183 9.03315 18.2123 8.89981C18.8199 8.46046 19.3443 7.91641 19.761 7.29315L19.7623 7.29115Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex h-[45px] items-center px-4 bg-[#F7F8FB] justify-between">
+                  <div className="flex items-center gap-2">
+                    <svg
+                      width="20"
+                      height="10"
+                      viewBox="0 0 20 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.90215 0.825452L1.13398 4.57544C1.13376 4.57566 1.13358 4.57591 1.13333 4.57613C0.850927 4.85803 0.851829 5.3161 1.1334 5.59706C1.13362 5.59728 1.1338 5.59753 1.13405 5.59775L4.90223 9.34774C5.18452 9.62867 5.64116 9.62762 5.92212 9.34529C6.20308 9.063 6.202 8.6064 5.9197 8.32544L3.38975 5.80775L18.6623 5.80775C19.0606 5.80775 19.3834 5.48489 19.3834 5.0866C19.3834 4.6883 19.0606 4.36544 18.6623 4.36544L3.38975 4.36544L5.91963 1.84776C6.20192 1.5668 6.20301 1.1102 5.92205 0.827904C5.64105 0.545536 5.18441 0.544563 4.90215 0.825452Z"
+                        fill="#8A8FB9"
+                      />
+                    </svg>
+
+                    <h1
+                      className={`${lato.className} text-[#8A8FB9] font-medium text-[16px] `}
+                    >
+                      Previous Post
+                    </h1>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <h1
+                      className={`${lato.className} text-[#8A8FB9] font-medium text-[16px] `}
+                    >
+                      Next Post
+                    </h1>
+                    <svg
+                      width="19"
+                      height="10"
+                      viewBox="0 0 19 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.635 9.1942L18.4031 5.44421C18.4033 5.44399 18.4035 5.44374 18.4038 5.44352C18.6862 5.16163 18.6853 4.70355 18.4037 4.42259C18.4035 4.42237 18.4033 4.42212 18.4031 4.4219L14.6349 0.671911C14.3526 0.390986 13.896 0.392032 13.615 0.674363C13.334 0.956658 13.3351 1.41326 13.6174 1.69422L16.1474 4.2119L0.874836 4.2119C0.476543 4.2119 0.153683 4.53476 0.153683 4.93306C0.153683 5.33135 0.476543 5.65421 0.874836 5.65421L16.1474 5.65421L13.6175 8.1719C13.3352 8.45286 13.3341 8.90945 13.6151 9.19175C13.8961 9.47412 14.3527 9.47509 14.635 9.1942Z"
+                        fill="#8A8FB9"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="py-20">
+            <div className="flex items-center p-2 shadow gap-2">
+              <Image
+                src={image5}
+                alt="post"
+                className="w-[106px] h-[103px]"
+              />
+              
+              <div className="flex flex-col ">
+
+              <p
+                className={`text-[#151875] ${josefinFont.className} text-[14px] leading-[18px] font-normal`}
+              >
+              Elit ornare in enim mauris.
+              </p>
+              <p
+                className={`text-[#8A8FB9] ${josefinFont.className} text-[14px] leading-[18px] font-normal`}
+              >
+             Aug 09 2020
+              </p>
+              </div>
+    </div>
+        </div>
               </div>
             </div>
           </div>
-          <div>
+          <div className="">
             <Sidebar />
           </div>
         </div>
